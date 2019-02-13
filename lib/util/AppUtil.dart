@@ -1,0 +1,2 @@
+List<String> _types = <String>['', 'Cable','Electricity','Water','Rent','Cloth','Grocery', 'Milk','Fruits','Vegetables','Resturant','Transport','Mobile','School Fees',
+'Medicine','Petrol','Entertainment', 'Others'];

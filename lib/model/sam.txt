@@ -1,0 +1,43 @@
+import 'package:intl/intl.dart';
+import 'package:flutter/material.dart';
+import 'package:daily_expense/model/note.dart';
+import 'package:daily_expense/service/firebase_firestore_service.dart';
+
+class sam extends StatefulWidget {
+
+  @override
+  State<StatefulWidget> createState() => null;
+
+  Widget build(BuildContext context) {
+    return Scaffold(
+        body: new IntrinsicHeight(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              new Align(
+                alignment: Alignment.topLeft,
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                  child: Text('"'),
+                ),
+              ),
+              Expanded(
+                child: Text(
+                    "The middle text entry can span several lines, but the first two will be really small. I'm wanting to have the first widget have the text at the top of the row and the 3rd widget to have the text at the bottom of the row. It's basically something similar to this image"
+                ),
+              ),
+              new Align(
+                alignment: Alignment.bottomRight,
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                  child: Text(
+                    '”',
+                    textAlign: TextAlign.start,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ));
+  }
+}
